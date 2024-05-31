@@ -1,0 +1,73 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
+<!--    <title>Untitled</title>-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/bootstrap/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/Contact-Form-Clean.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/Login-Form-Dark.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/Navigation-with-Button.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/Registration-Form-with-Photo.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/styles.css">-->
+<!--    <link rel="stylesheet" href="../../../static/nav-bar/css/Team-Boxed.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<div th:fragment="nav">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+                <a class="navbar-brand" th:href="@{/Home/home-page}">Sistema de Gestión de Pacientes</a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Alternar navegación</span><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                     id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" th:href="@{/patients/list}">Pacientes</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" th:href="@{/doctors/list}">Doctores</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" th:href="@{/diseases/list}">Enfermedades</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" th:href="@{/medicines/list}">Medicamentos</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" th:href="@{/Home/contact-US}">Contáctanos</a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true">Descargar </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" role="presentation" onclick="clickDownload()">Reportes de Pacientes</a>
+                                <a class="dropdown-item" role="presentation" onclick="clickDownload()">Reportes de Doctores</a>
+                                <a class="dropdown-item" role="presentation" onclick="clickDownload()">Reportes de Medicamentos</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="navbar-text actions">
+                        <a class="login" th:href="@{/Home/login}">Iniciar Sesión</a>
+                        <a class="btn btn-light action-button" role="button" th:href="@{/Home/signUP}">Registrarse</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<script>
+    clickDownload()
+    {
+        alert("OOP's ! There id not report to be download.");
+    }
+</script>
+    <script src="/nav-bar/js/jquery.min.js"></script>
+    <script src="/nav-bar/bootstrap/js/bootstrap.min.js"></script>
+<!--</body>-->
+
+<!--</html>-->
