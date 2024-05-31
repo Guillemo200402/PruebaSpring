@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Gestión Hospitalaria</title>
+    <link rel="stylesheet" href="/Footer/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Footer/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/Footer/css/Article-List.css">
+    <link rel="stylesheet" href="/Footer/css/Footer-Dark.css">
+    <link rel="stylesheet" href="/Footer/css/styles.css">
+    <link rel="stylesheet" href="/nav-bar/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/nav-bar/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="/nav-bar/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="/nav-bar/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/nav-bar/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="/nav-bar/css/styles.css">
+    <link rel="stylesheet" href="/nav-bar/css/Team-Boxed.css">
+    <link rel="stylesheet" href="/Home/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Home/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/Home/css/Article-List.css">
+    <link rel="stylesheet" href="/Home/css/styles.css">
+</head>
+
+<body>
+    <div th:replace="fragments/nav-bar/nav-bar :: nav"></div>
+    <div class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Gestión Hospitalaria</h2>
+                <p class="text-center">Actualmente, los hospitales están en su mayoría atendidos por médicos profesionales, cirujanos, enfermeras y practicantes de salud aliados, mientras que en el pasado, este trabajo generalmente lo realizaban los miembros de órdenes religiosas fundadoras o voluntarios.</p>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#"><img class="img-fluid rounded" src="/Home/img/1.jpg"></a>
+                    <h3 class="name">Doctor</h3>
+                    <p class="description">Los doctores hacen que las personas estén más saludables. Cuando las personas se enferman, los doctores averiguan por qué. Les dan medicina y otros tipos de tratamiento. También dan consejos sobre dieta, ejercicio y sueño.</p>
+                    <a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#"><img class="img-fluid rounded" src="/Home/img/2.jpg"></a>
+                    <h3 class="name">Hospital</h3>
+                    <p class="description">Un hospital es una institución de atención médica que brinda tratamiento a pacientes con personal médico y de enfermería especializado y equipo médico.</p>
+                    <a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item">
+                    <a href="#"><img class="img-fluid rounded" src="/Home/img/3.jpg"></a>
+                    <h3 class="name">Medicamentos</h3>
+                    <p class="description">La farmacia es la ciencia y técnica de preparar, dispensar y revisar medicamentos y brindar servicios clínicos adicionales. Es una profesión de salud que vincula las ciencias de la salud con las ciencias farmacéuticas y tiene como objetivo garantizar el uso seguro, efectivo y asequible de los medicamentos.</p>
+                    <a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Home/js/jquery.min.js"></script>
+    <script src="/Home/bootstrap/js/bootstrap.min.js"></script>
+    <div th:replace="fragments/Footer/Footer :: footer"></div>
+</body>
+
+</html>
